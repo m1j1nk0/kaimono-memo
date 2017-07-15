@@ -7,7 +7,7 @@
 
 <p>
   <strong>Body:</strong>
-  <%= @comment.body %>
+  <%= simple_format(@comment.body) %>
 </p>
 
 <p>
@@ -16,4 +16,4 @@
 </p>
 
 <%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Back', @comment.idea %>
